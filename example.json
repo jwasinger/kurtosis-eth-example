@@ -1,0 +1,23 @@
+{
+	"participants": [{
+			"el_client_type": "geth",
+			"el_client_image": "jwasinger/go-ethereum:latest",
+			"cl_client_type": "lighthouse",
+			"cl_client_image": "sigp/lighthouse:latest"
+		},
+		{
+			"el_client_type": "geth",
+			"el_client_image": "jwasinger/go-ethereum:latest",
+			"cl_client_type": "lighthouse",
+			"cl_client_image": "sigp/lighthouse:latest"
+		}
+	],
+	"network_params": {
+		"capella_fork_epoch": 2,
+		"deneb_fork_epoch": 5
+	},
+	"launch_additional_services": false,
+	"wait_for_finalization": false,
+	"wait_for_verifications": false,
+	"global_client_log_level": "info"
+}
