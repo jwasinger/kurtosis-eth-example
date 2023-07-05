@@ -15,6 +15,7 @@ async function signTx() {
 	const getTxCount = new Promise((resolve, reject) => {
 		web3.eth.getTransactionCount("878705ba3f8Bc32FCf7F4CAa1A35E72AF65CF766", function(err, count) {
 			if (!err) {
+				console.log("count is " + count)
 				resolve(count)
 			}
 			reject(err)
@@ -27,7 +28,7 @@ async function signTx() {
 		web3.eth.signTransaction({
 				from:"878705ba3f8Bc32FCf7F4CAa1A35E72AF65CF766",
 				to:"34a600a929c439fcc9fd87bf493fea453add3d5a",
-				gas:"21016",
+				gas:"2100016",
 				gasPrice: "1",
 				maxPriorityFeePerGas: "1",
 				maxFeePerGas: "1",
